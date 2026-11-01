@@ -16,5 +16,22 @@ namespace EntityProjeUygulama
         {
             InitializeComponent();
         }
+
+        DbEntityUrunEntities db = new DbEntityUrunEntities();
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            var kategoriler = db.TBLKATEGORI.ToList();
+
+            dataGridView1.DataSource = kategoriler;
+        }
+
+        private void BtnEkle_Click(object sender, EventArgs e)
+        {
+            TBLKATEGORI t = new TBLKATEGORI();
+            t.AD = textBox2.Text;
+            db.TBLKATEGORI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Kategori Eklendi");
+        }
     }
 }
