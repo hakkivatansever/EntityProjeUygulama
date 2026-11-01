@@ -34,8 +34,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.BtnListele = new System.Windows.Forms.Button();
             this.BtnEkle = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -92,23 +92,25 @@
             this.BtnEkle.UseVisualStyleBackColor = true;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
-            // button3
+            // BtnSil
             // 
-            this.button3.Location = new System.Drawing.Point(222, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 39);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Sil";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSil.Location = new System.Drawing.Point(222, 135);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(120, 39);
+            this.BtnSil.TabIndex = 3;
+            this.BtnSil.Text = "Sil";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
-            // button4
+            // BtnGuncelle
             // 
-            this.button4.Location = new System.Drawing.Point(222, 197);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 39);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Güncelle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Location = new System.Drawing.Point(222, 197);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(120, 39);
+            this.BtnGuncelle.TabIndex = 3;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // dataGridView1
             // 
@@ -127,8 +129,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 260);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnGuncelle);
+            this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnEkle);
             this.Controls.Add(this.BtnListele);
             this.Controls.Add(this.textBox2);
@@ -153,8 +155,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button BtnListele;
         private System.Windows.Forms.Button BtnEkle;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnSil;
+        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
